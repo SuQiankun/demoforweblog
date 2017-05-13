@@ -15,7 +15,7 @@
 			<li>有</li>
 			<li>20</li>
 			<li>天</li>
-		<h5>好好加油,<?php echo ($name); ?></h5>
+		<h5>好好加油,<?php echo ($result["data"]); ?></h5>
 		</ul>
 	</body>
 </html>

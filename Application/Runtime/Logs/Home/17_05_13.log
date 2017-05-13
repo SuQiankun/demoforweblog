@@ -1,131 +1,229 @@
-[ 2017-05-13T10:33:24+08:00 ] ::1 /demoforweblog/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008648s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.008894s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023891s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024100s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003050s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.003183s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004408s ]
-INFO: [ app_end ] --END-- [ RunTime:0.004542s ]
-
-[ 2017-05-13T10:57:02+08:00 ] ::1 /demoforweblog/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
-INFO: [ view_parse ] --START--
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004556s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004708s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001258s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001491s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001634s ]
-
-[ 2017-05-13T11:15:01+08:00 ] ::1 /demoforweblog/index.php/home/index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
-INFO: [ view_parse ] --START--
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000354s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000489s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
-
-[ 2017-05-13T11:19:04+08:00 ] ::1 /demoforweblog/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
-INFO: [ view_parse ] --START--
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000242s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000370s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000097s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
-
-[ 2017-05-13T11:27:05+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004843s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.005054s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000100s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
-
-[ 2017-05-13T11:28:45+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000138s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004464s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004660s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
-
-[ 2017-05-13T11:28:55+08:00 ] ::1 /demoforweblog/index.php/home/index/jump/name/xiaoxiaosu
+[ 2017-05-13T14:42:10+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0141s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003143s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.003287s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026780s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000125s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2017-05-13T14:43:18+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Array to string conversion /Applications/MAMP/htdocs/demoforweblog/Application/Runtime/Cache/Home/02793a051ab220380bb9a394d4c5f914.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-05-13T14:44:11+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' /Applications/MAMP/htdocs/demoforweblog/Application/Home/Controller/IndexController.class.php 第 12 行.
+NOTIC: [8] Array to string conversion /Applications/MAMP/htdocs/demoforweblog/Application/Home/Controller/IndexController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-05-13T14:44:32+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Applications/MAMP/htdocs/demoforweblog/Application/Home/Controller/IndexController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-05-13T14:45:43+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Applications/MAMP/htdocs/demoforweblog/Application/Home/Controller/IndexController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: result /Applications/MAMP/htdocs/demoforweblog/Application/Runtime/Cache/Home/02793a051ab220380bb9a394d4c5f914.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2017-05-13T14:45:46+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Trying to get property of non-object /Applications/MAMP/htdocs/demoforweblog/Application/Home/Controller/IndexController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined variable: result /Applications/MAMP/htdocs/demoforweblog/Application/Runtime/Cache/Home/02793a051ab220380bb9a394d4c5f914.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-05-13T14:45:58+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: result /Applications/MAMP/htdocs/demoforweblog/Application/Runtime/Cache/Home/02793a051ab220380bb9a394d4c5f914.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-05-13T14:45:59+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: result /Applications/MAMP/htdocs/demoforweblog/Application/Runtime/Cache/Home/02793a051ab220380bb9a394d4c5f914.php 第 18 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-05-13T14:46:34+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002005s ]
+
+[ 2017-05-13T14:46:55+08:00 ] ::1 /demoforweblog/index.php/home/index/jump
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `think_data` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `think_data` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
 
