@@ -3,12 +3,20 @@
  <head>
  	<meta charset="UTF-8" />
  	<title>表单提交</title>
+     <load href='__PUBLIC__/jquery-3.2.0.min.js' /></load>
  </head>
  <body>
- <FORM method="post" action="__URL__/insert">
+ <FORM id="formcontent" method="post" action="__URL__/insert">
 标斤斤计较题：<INPUT type="text" name="title"><br/>
 内容：<textarea name="content" rows="5" cols="45"></textarea><br/>
 <INPUT type="submit" value="提交">
 </FORM>
+ <button id="btn" type="button">dianwo</button>
  </body>
+ <script>
+$("#btn").click(function(){
+    $("#formcontent").hide();
+    alert('123321321');
+});
+ </script>
  </html>

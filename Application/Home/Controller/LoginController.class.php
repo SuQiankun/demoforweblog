@@ -4,23 +4,28 @@ use Think\Controller;
 
 class LoginController extends Controller{
 
+
     public function loginIn($username,$password)
     {
-        echo($username);
-        echo($password);
 
         $Use = M('User');
         $params['username']=$username;
-
         $result = $Use->where($params)->select();
 
-        if($result[0]['username']){
+
+        if($result[0]['username'] == $username){
 
             if($result[0]['password'] == $password){
-                echo ('登陆成功');
+              $this->display('loginAction');
             }else{
-                echo ('登陆失败');
+                echo ('<script>alert("密码错误")</script>');
+                $this->display('login');
             }
+
+
+        }else{
+            echo ('<script>alert("账号错误")</script>');
+            $this->display('login');
 
         }
 
