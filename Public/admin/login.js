@@ -18,12 +18,30 @@ var login = {
             return false;
         }
         //ajax -->/username/'+name+'/password/'+psw
-        var url = '/index.php/home/login/loginIn';
+        //var url = '/index.php/home/login/loginIn';
+        var url = 'http://localhost:8888/demoforweblog/index.php/home/login/loginIn'
         var data = {'username':name,'password':psw};
 
-        $.post(url,data,function(result){
 
-        });
+        jQuery.ajax({
+                url: "http://localhost:8888/demoforweblog/index.php/home/login/loginIn?" + jQuery.param({
+                    "username": name,
+                    "password": psw,
+                }),
+                type: "POST",
+            })
+            .done(function(data, textStatus, jqXHR) {
+                //console.log("HTTP Request Succeeded: " + jqXHR.status);
+                //console.log(data);
+                showTip.error(data);
+            })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+                //console.log("HTTP Request Failed");
+                showTip.error(data);
+            })
+            .always(function() {
+                /* ... */
+            });
 
     }
 
