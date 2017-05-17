@@ -5,13 +5,14 @@ use Think\Controller;
 class LoginController extends Controller{
 
 
-    public function loginIn($username,$password)
+    public function loginIn()
     {
+        $username = $_POST['username'];
+        $password= $_POST['password'];
 
         $Use = M('User');
         $params['username']=$username;
         $result = $Use->where($params)->select();
-
 
         if($result[0]['username'] == $username){
 

@@ -14,8 +14,19 @@
  <button id="btn" type="button">dianwo</button>
  </body>
  <script>
+     var hideStatus=false;
 $("#btn").click(function(){
-    $("#formcontent").hide();
+
+    if(hideStatus){
+        $("#formcontent").show();
+       hideStatus = false;
+
+    }else{
+        $("#formcontent").hide();
+        hideStatus = true;
+    }
+
+
     alert('123321321');
 });
  </script>
