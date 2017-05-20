@@ -7,13 +7,14 @@ class LoginController extends Controller{
 
     public function loginIn()
     {
-        $username = $_REQUEST["username"];
-        $password= $_REQUEST['password'];
+        $username = $_POST["username"];
+        $password= $_POST['password'];
+
         if(!trim($username)){
             return show(0,$username);
         }
         if(!trim($password)){
-            return show(0,'用密码不能为空');
+            return show(0,'密码不能为空');
         }
         $Use = M('User');
         $params['username']=$username;
@@ -22,18 +23,16 @@ class LoginController extends Controller{
         if($result[0]['username'] == $username){
 
             if($result[0]['password'] == $password){
-              $this->display('loginAction');
+                showURL(200,'登陆成功','loginAction');
             }else{
-               show(0,'密码错误');
+                show(0,'密码错误');
                 $this->display('login');
             }
-
 
         }else{
 
             show(0,'账号错误');
             $this->display('login');
-
 
         }
 

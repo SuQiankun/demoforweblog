@@ -15,3 +15,12 @@ function show($status,$message,$data=array()){
 
     exit(json_encode($result));
 }
+function showURL($status,$message,$urlStr=''){
+    $result = array(
+        'status'=>$status,
+        'message'=>$message,
+        'urlStr'=>$urlStr
+    );
+
+    exit(json_encode($result));
+}
