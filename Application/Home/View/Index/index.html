@@ -7,27 +7,31 @@
  </head>
  <body>
  <FORM id="formcontent" method="post" action="__URL__/insert">
-标斤斤计较题：<INPUT type="text" name="title"><br/>
-内容：<textarea name="content" rows="5" cols="45"></textarea><br/>
-<INPUT type="submit" value="提交">
+标斤斤计较题：<INPUT type="text" name="title" id="testInput"><br/>
+内容：<textarea  name="content" rows="5" cols="45"></textarea><br/>
+<INPUT type="submit" id="textContent" value="提交">
 </FORM>
  <button id="btn" type="button">dianwo</button>
  </body>
  <script>
-     var hideStatus=false;
-$("#btn").click(function(){
+$("#testInput").bind('input propertychange',function(){
+    var jsonstr = {
+        "name":'xiaoxiaosu',
+        "age":"14",
+    };
 
-    if(hideStatus){
-        $("#formcontent").show();
-       hideStatus = false;
-
-    }else{
-        $("#formcontent").hide();
-        hideStatus = true;
-    }
-
-
-    alert('123321321');
+    jsonstr["sex"] = "男";
+console.log(jsonstr);
 });
+
+function insertSplit(value,idStr){
+    if(value.length == 4){
+        document.getElementById(idStr).value += '-';
+    }
+    if(value.length == 7){
+        document.getElementById(idStr).value += '-';
+    }
+}
+
  </script>
  </html>
