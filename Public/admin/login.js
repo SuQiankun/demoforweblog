@@ -32,6 +32,7 @@ var login = {
                     showTip.error(json.message);
                 }
             },
+        
             dataType: 'JSON'
         });
 
