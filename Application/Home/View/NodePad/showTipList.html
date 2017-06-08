@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <load  herf="/Public/jquery-3.2.0.min.js" />
+    <!--<script type="text/javascript" src="__PUBLIC__/jquery-3.2.0.min.js"></script>-->
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+
+    <volist name="list" id="vo">
+
+    <if condition = "($vo.index % 2  eq 1)" >
+
+        <span style = "background-color: darkred">{$vo.index}</span> <span style = "background-color: darkred">--- ></span> <span style = "background-color: darkred"> {$vo.content} </span>
+        <br>
+        <else />
+        <span style = "background-color: darkcyan">{$vo.index}</span> <span style = "background-color: darkcyan">--- ></span> <span style = "background-color: darkcyan"> {$vo.content} </span>
+        <br>
+    </if>
+
+
+
+
+            <br/>
+    </volist>
+
+
+
+<script type="text/javascript" >
+   $(document).ready(function(){
+
+
+   });
+
+</script>
+</body>
+</html>

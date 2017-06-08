@@ -18,6 +18,7 @@ class LoginController extends Controller{
         if($result[0]['username'] == $username){
             if($result[0]['password'] == $password){
                 showURL(200,'登陆成功','loginAction');
+//                $this->success('新增成功，即将返回列表页面', '/NodePad/showTipList');
             }else{
                 show(0,'密码错误');
                 $this->display('login');

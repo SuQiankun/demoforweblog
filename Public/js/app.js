@@ -1,6 +1,6 @@
+var baseURL = "http://localhost:8888";
 (function($) {
   'use strict';
-
   $(function() {
     var $fullText = $('.admin-fullText');
     $('#admin-fullscreen').on('click', function() {

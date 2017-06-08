@@ -27,7 +27,9 @@ var login = {
             data: data,
             success: function(json){
                 if (json.status == 200){
-                    window.location.href = json.urlStr;
+
+                    window.location.href = '/demoforweblog/index.php/home/NodePad/showTipList';
+
                 }else{
                     showTip.error(json.message);
                 }

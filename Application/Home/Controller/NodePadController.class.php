@@ -14,7 +14,12 @@ class NodePadController extends Controller{
 			 unset($v['sgnumber']);
 		}
 		$resultData = json_encode($result);
-		$this -> ajaxReturn($resultData); 
+
+		$this->assign('list',$result);
+
+		$this->display();
+
+//		$this -> ajaxReturn($resultData);
     }
 
 
