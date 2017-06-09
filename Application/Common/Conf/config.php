@@ -9,5 +9,14 @@ return array(
 'DB_PORT'=>3306,// 端口
 'DB_PREFIX'=>'think_',// 数据库表前缀
 'DB_CHARSET'=>'utf8',// 数据库字符集
-'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock'
+'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
+
+//'配置项'=>'配置值'
+'URL_ROUTER_ON' => true,
+
+'URL_MAP_RULES' =>  array(
+'showTipList'=> 'Home/NodePad/showTipList',
+
+),
+
 );
