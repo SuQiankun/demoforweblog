@@ -19,17 +19,14 @@
 
     <if condition = "($vo.index % 2  eq 1)" >
 
-        <span style = "background-color: darkred">{$vo.index}</span> <span style = "background-color: darkred">--- ></span> <span style = "background-color: darkred"> {$vo.content} </span>
+        <span style = "background-color: cadetblue">{$vo.index}</span> <span style = "background-color: cadetblue">--- ></span> <span style = "background-color: cadetblue"> {$vo.content} </span>
         <br>
         <else />
         <span style = "background-color: darkcyan">{$vo.index}</span> <span style = "background-color: darkcyan">--- ></span> <span style = "background-color: darkcyan"> {$vo.content} </span>
         <br>
     </if>
 
-
-
-
-            <br/>
+        <br/>
     </volist>
 
 
