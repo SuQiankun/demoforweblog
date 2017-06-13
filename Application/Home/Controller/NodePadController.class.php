@@ -6,7 +6,9 @@ class NodePadController extends Controller{
 
 
     public function showTipList(){
+
 		$WORD = M('word');
+
 //		$map['sgNumber'] = array('gt',5);
 //		$result = $WORD->where($map)->select();
 
@@ -17,6 +19,7 @@ class NodePadController extends Controller{
 			$v['index'] = $v['sgnumber'];
 			 unset($v['sgnumber']);
 		}
+
 		$resultData = json_encode($result);
 
 		$this->assign('list',$result);
@@ -24,9 +27,10 @@ class NodePadController extends Controller{
 		$this->display();
 
 //		$this -> ajaxReturn($resultData);
+
     }
 
-    
+
 	function updateInfo($infoid){
 		$info = D('word');
 
