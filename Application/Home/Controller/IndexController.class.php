@@ -28,14 +28,13 @@ class IndexController extends Controller {
     public function checkFormat(){
 
         /*
-         * 在模型文件中, 添加 $_validate 属性(弗雷属性), 之后需要使用 new \Model\xxxxModel 进行实例化模型类, 如果错误信息
+         * 在模型文件中, 添加 $_validate 属性(父类属性), 之后需要使用 new \Model\xxxxModel 进行实例化模型类, 如果错误信息
          * 比较多可以设置 $pathValidate 为 true
          * */
          $_validate = array(
             //验证规则 array(字段名,验证规则,错误提示 ==);
              array(),
         );
-
 
     }
     
