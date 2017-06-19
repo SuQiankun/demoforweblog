@@ -7,17 +7,39 @@
  */
 namespace Home\Controller;
 use Think\Controller;
+use Think\Think;
 
-class RegisterController extends \Think\Controller{
+class RegisterController extends Controller{
 
-    public function reegister(){
+    function index()
+    {
 
-        if (!empty($_POST)){
+        echo 'hdiebvjahuidsa';
 
+        if (IS_POST){
+            echo 'POST';
         }else{
-
-         $this->display();
+            echo 'NOT POST';
         }
+    }
+
+
+     function register()
+     {
+         $user = new \Home\Model\UserinfoModel();
+        if (IS_POST){
+            $data =  $user->create();
+
+            if ($data){
+                dump($data);
+            }else{
+                echo $user->getError();
+            }
+        }else{
+            $this->display();
+        }
+
+
 
     }
 
