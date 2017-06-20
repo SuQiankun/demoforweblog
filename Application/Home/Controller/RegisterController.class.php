@@ -31,7 +31,9 @@ class RegisterController extends Controller{
             $data =  $user->create();
 
             if ($data){
-                dump($data);
+                $data['hobby'] = implode(',',$data['hobby']);
+                $user->add($data);
+                $this->display();
             }else{
                 echo $user->getError();
             }
