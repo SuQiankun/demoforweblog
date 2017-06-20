@@ -1,36 +1,51 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Verify;
 
 class LoginController extends Controller{
-    public function loginIn(){
-        $username = $_POST["username"];
-        $password= $_POST['password'];
-        if(!trim($username)){
-            return show(0,$username);
-        }
-        if(!trim($password)){
-            return show(0,'密码不能为空');
-        }
-        $Use = M('User');
-        $params['username']=$username;
-        $result = $Use->where($params)->select();
-        if($result[0]['username'] == $username){
-            if($result[0]['password'] == $password){
-                showURL(200,'登陆成功','loginAction');
-//                $this->success('新增成功，即将返回列表页面', '/NodePad/showTipList');
-            }else{
-                show(0,'密码错误');
-                $this->display('login');
-            }
-        }else{
-            show(0,'账号错误');
-            $this->display('login');
+    public function login(){
 
+        if (!empty($_POST)){
+            $vry = new Verify();
+
+            if ($vry->check($_POST['imgcode'])){
+
+                $userpsw = array(
+                    'username'=>$_POST['username'],
+                    'password'=>$_POST['password'],
+                );
+                $info = D('userinfo')->where($userpsw)->find();
+
+                if ($info){
+                    echo '登录失败';
+                }else{
+                    echo '登录失败';
+                }
+
+            }else{
+                echo '验证码错误';
+            }
+
+        }else{
+            $this->display();
         }
+
 
     }
-   
+
+    function vryImg(){
+        //验证码的配置
+        $cfg = array(
+            'imageH'=> 40,
+            'imageW'=>100,
+            'fontSize'=>15,
+            'length'=>4,
+            'fontttf'=>'4.ttf',
+        );
+        $vry = new \Think\ Verify($cfg);
+        $vry->entry();
+    }
 
 
 }

@@ -22,7 +22,6 @@ class UserinfoModel extends Model{
 //       array('password','',''),
 //       array('email','email','邮箱格式错误',2),
 
-
     );
 
     function checkHobby($arg){
