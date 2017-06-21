@@ -14,18 +14,20 @@ class LoginController extends Controller{
 
 
         $page = new Page($count,'1');
-
-        $page->setConfig('header',' 条记录 ');
-        $page->setConfig('prev',' 上一页 ');
-        $page->setConfig('next',' 下一页 ');
-        $page->setConfig('first',' 首页 ');
+        $page->lastSuffix = false;
+        $page->setConfig('header','<a class="rows">共<b>%TOTAL_ROW%</b>条记录&nbsp;');
+        $page->setConfig('prev',' &nbsp;< ');
+        $page->setConfig('next',' >&nbsp; ');
+        $page->setConfig('first',' 首页&nbsp; ');
         $page->setConfig('last',' 尾页 ');
+        $page->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%%HEADER%');
 
         $show = $page->show();
 
         //$list = $Data->where($map)->order('create_time')->limit($Page->firstRow.','.$Page->listRows)->select();
         $list = $data->where($map)->order('user_id')->limit($page->firstRow.','.$page->listRows)->select();
 
+        dump($list);
         $this->assign('list',$list);
         $this->assign('page',$show);
 

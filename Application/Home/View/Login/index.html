@@ -6,8 +6,9 @@
 </head>
 
 <style>
-    .result page{
-        background: indianred;
+    .resultpage{
+        background: black;
+        color: honeydew;
         margin-right: 5px;
         margin-left: 5px;
         padding-left: 5px;
@@ -16,13 +17,21 @@
         }
 
     .num {
-        background: indianred;
-        margin-right: 5px;
-        margin-left: 5px;
+        color: honeydew;
         padding-left: 5px;
         padding-right: 5px;
 
     }
+    .current{
+        color: red;
+
+    }
+    .prev{color: honeydew;}
+    .next{color: honeydew;}
+    .last{color: honeydew;}
+    .first{color: honeydew;}
+    a{text-decoration: none}
+
 </style>
 <body>
 
@@ -37,7 +46,7 @@
     <tr>
     </tr>
 </table>
-<div class="result page">{$page}</div>
+<div class="resultpage" style="width: 500px">{$page}</div>
 
 
 
