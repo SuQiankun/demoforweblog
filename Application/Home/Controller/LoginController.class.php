@@ -2,11 +2,31 @@
 namespace Home\Controller;
 use Think\Controller;
 use Think\Page;
+use Think\Upload;
 use Think\Verify;
 
 class LoginController extends Controller{
 
     function index()
+    {
+        if(!empty($_POST)){
+            echo '12132131312312';
+            $upload = new Upload();
+            $upload->rootPath = './Public';
+            $upload->allowExts = array('jpg','gif','jpeg');
+            $upload->savePath = '/Uploads/';
+
+            $info = $upload->uploadOne($_FILES['upfile']);
+            dump($info);
+
+        }else{
+
+            $this->display();
+        }
+
+    }
+
+    function fenYe()
     {
         $data  = M('userinfo');
         $map['user_id'] = array('gt',0);
@@ -32,7 +52,6 @@ class LoginController extends Controller{
         $this->assign('page',$show);
 
         $this->display();
-
 
     }
 
