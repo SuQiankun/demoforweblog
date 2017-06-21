@@ -22,6 +22,7 @@
         padding-right: 5px;
 
     }
+
     .current{
         color: red;
 
@@ -38,7 +39,8 @@
 <h1>212</h1>
 <form action="__SELF__" method="post" enctype="multipart/form-data">
 
-    <input type="file" name="upfile">
+    <input type="file" name="upfile[]">
+    <input type="file" name="upfile[]">
     <input type="text" name="ideas">
 
     <button type="submit">上传图片</button>

@@ -13,7 +13,7 @@ return array(
 
 //'配置项'=>'配置值'
 'URL_ROUTER_ON' => true,
-
+//'URL_MODEL'=>3,
 'URL_MAP_RULES' =>  array(
 'showTipList'=> 'Home/NodePad/showTipList',
 

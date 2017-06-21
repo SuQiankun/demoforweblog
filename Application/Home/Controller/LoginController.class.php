@@ -16,8 +16,17 @@ class LoginController extends Controller{
             $upload->allowExts = array('jpg','gif','jpeg');
             $upload->savePath = '/Uploads/';
 
-            $info = $upload->uploadOne($_FILES['upfile']);
-            dump($info);
+
+            foreach ($_FILES as $k => $v){
+
+                $info = $upload->uploadOne($v);
+                $info+=$info;
+                dump($info);
+
+
+            }
+
+
 
         }else{
 
@@ -36,10 +45,10 @@ class LoginController extends Controller{
         $page = new Page($count,'1');
         $page->lastSuffix = false;
         $page->setConfig('header','<a class="rows">共<b>%TOTAL_ROW%</b>条记录&nbsp;');
-        $page->setConfig('prev',' &nbsp;< ');
-        $page->setConfig('next',' >&nbsp; ');
-        $page->setConfig('first',' 首页&nbsp; ');
-        $page->setConfig('last',' 尾页 ');
+        $page->setConfig('prev','&nbsp;<');
+        $page->setConfig('next','>&nbsp;');
+        $page->setConfig('first','首页&nbsp;');
+        $page->setConfig('last','&nbsp;尾页');
         $page->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%%HEADER%');
 
         $show = $page->show();
@@ -51,7 +60,7 @@ class LoginController extends Controller{
         $this->assign('list',$list);
         $this->assign('page',$show);
 
-        $this->display();
+        $this->display('index');
 
     }
 

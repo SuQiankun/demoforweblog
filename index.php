@@ -19,6 +19,7 @@ define('APP_DEBUG',True);
 //define('HTML_PATH','./');
 // 定义应用目录
 define('APP_PATH','./Application/');
+
 //快速生成 admin 模块
 //define('BIND_MODULE','Admin');
 // 引入ThinkPHP入口文件
