@@ -1,14 +1,16 @@
 <?php
+
 namespace Home\Controller;
 use Think\Controller;
 use Think\Page;
 use Think\Upload;
 use Think\Verify;
-
 class LoginController extends Controller{
 
     function index()
     {
+        dump($_COOKIE);
+
        $this->display();
 
     }
@@ -79,14 +81,18 @@ class LoginController extends Controller{
                 $info = D('userinfo')->where($userpsw)->find();
 
                 if ($info){
+                    $userpsw = array(
+                        'username'=>$_POST['username'],
+                        'password'=>$_POST['password'],
+                    );
+                    $re = setcookie('userinfo',$_POST['username'],time()+3600,'/');
+                    $re = setcookie('password',$_POST['password'],time()+3600,'/');
+                    dump($re);
                     echo '登陆成功';
-                    $ip = get_client_ip();
-                    echo $ip;
-
-                    $ad = new \Org\Net\IpLocation('UTFry.dat');
-                    echo $ad->getlocation($ip);
+                    $this->display();
 
 
+//                    dump($_COOKIE);
                 }else{
                     echo '登录失败';
                 }
@@ -118,3 +124,4 @@ class LoginController extends Controller{
 
 
 }
+ob_end_flush();
