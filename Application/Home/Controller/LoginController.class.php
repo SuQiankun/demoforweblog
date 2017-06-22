@@ -9,6 +9,12 @@ class LoginController extends Controller{
 
     function index()
     {
+       $this->display();
+
+    }
+
+    function uploadFiles()
+    {
         if(!empty($_POST)){
             echo '12132131312312';
             $upload = new Upload();
@@ -22,17 +28,12 @@ class LoginController extends Controller{
                 $info = $upload->uploadOne($v);
                 $info+=$info;
                 dump($info);
-
-
             }
-
-
 
         }else{
 
             $this->display();
         }
-
     }
 
     function fenYe()

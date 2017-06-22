@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="__PUBLIC__/UEditor/ueditor.config.js"></script>
+    <script src="__PUBLIC__/UEditor/ueditor.all.min.js"></script>
+    <script src="__PUBLIC__/UEditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="__PUBLIC__/jquery-3.2.0.min.js"></script>
 </head>
 
+<script type="text/javascript" charset="utf-8">
+
+    window.UEDITOR_HOME_URL = "__PUBLIC__/UEditor/";
+
+    $(document).ready(function () {
+        UE.getEditor('test_ue', {
+            initialFrameHeight: 500,
+            initialFrameWidth: 1100,
+            serverUrl: "{:U(MODULE_NAME.'/Index/testUe')}"
+        });
+    });
+
+
+</script>
 <style>
+
     .resultpage{
         background: black;
         color: honeydew;
@@ -20,13 +39,8 @@
         color: honeydew;
         padding-left: 5px;
         padding-right: 5px;
-
     }
-
-    .current{
-        color: red;
-
-    }
+    .current{color: red;}
     .prev{color: honeydew;}
     .next{color: honeydew;}
     .last{color: honeydew;}
@@ -36,7 +50,11 @@
 </style>
 <body>
 
-<h1>212</h1>
+
+<textarea name="test_ue" id="test_ue" style="width:1024px;height:500px;"></textarea>
+
+
+
 <form action="__SELF__" method="post" enctype="multipart/form-data">
 
     <input type="file" name="upfile[]">
