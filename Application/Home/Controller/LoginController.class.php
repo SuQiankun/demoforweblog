@@ -102,7 +102,7 @@ class LoginController extends Controller{
             }
 
         }else{
-            $this->display();
+//            $this->display();
         }
 
 
