@@ -3,11 +3,17 @@ namespace Home\Controller;
 use function Sodium\add;
 use Think\Controller;
 class IndexController extends Controller {
+
     public function index(){
+		$data = array('name' => 'suqiankun','age'=>'14' );
+    	$this->ajaxReturn(json_encode($data));// json_encode($data)
+        
+        // $this->display();
 
 
-
-       $this->display();
+        // $str = array('status'=>'off',);
+        // $jsonStr = json_encode($str);
+        // $this->ajaxReturn($jsonStr,'json');
     }
 
 
@@ -18,7 +24,6 @@ class IndexController extends Controller {
             //多选框处理,
             $_POST['user_hobby'] = implode(',',$_POST['user_hobby']);
             $user.add($_POST);
-
 
         }else{
             $this->display();
@@ -42,6 +47,7 @@ class IndexController extends Controller {
  	
  	$Data = M('Data');
  	$result     = $Data->find(2);
+
  	$this->assign('result',$result);
  	
  	$this->display();
