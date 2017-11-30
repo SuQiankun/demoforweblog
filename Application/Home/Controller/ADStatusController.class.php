@@ -2,13 +2,9 @@
 namespace Home\Controller;
 use Think\Controller;
 class ADStatusController extends Controller{
-    //插入数据的操作
     public function index(){
-      
-        $str = array('status'=>'off');
-        
+        $str['stauts'] = 'on';
         $jsonStr = json_encode($str);
-        $this->ajaxReturn($jsonStr,'JSON');
-
+        exit($jsonStr);
     }   
  }
