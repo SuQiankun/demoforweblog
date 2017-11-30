@@ -8,7 +8,7 @@ class ADStatusController extends Controller{
         $str = array('status'=>'off');
         
         $jsonStr = json_encode($str);
-        $this->ajaxReturn($jsonStr);
+        $this->ajaxReturn($jsonStr,'JSON');
 
     }   
  }
