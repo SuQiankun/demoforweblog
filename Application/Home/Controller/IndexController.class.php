@@ -4,10 +4,28 @@ use function Sodium\add;
 use Think\Controller;
 class IndexController extends Controller {
 
+
+
+
     public function index(){
-		$data = array('name' => 'suqiankun','age'=>'14' );
-    	$this->ajaxReturn(json_encode($data));// json_encode($data)
-        
+
+        for($i = 1;$i<31;$i++){
+            
+            if (strlen($i) == 1){
+                $i = "0".$i;
+            }
+
+            echo("zjy".date("Ymd").$i."</br>");
+            // print
+
+
+        }
+
+
+
+		// $data = array('name' => 'suqiankun','age'=>'14' );
+    	// $this->ajaxReturn(json_encode($data));// json_encode($data)
+
         // $this->display();
 
 
